@@ -1,7 +1,15 @@
 # Projeto C# CRUD Clientes
 
-## Descrição
-Aplicação console que gerencia clientes com CRUD completo, manipulação de arquivos (TXT/JSON) e conexão com SQL Server.
+## 📌 Descrição
+Este projeto é uma aplicação em **C# .NET Console** que permite gerenciar clientes através de **CRUD** integrado a banco de dados SQL Server, além de suportar **manipulação de arquivos TXT e JSON** para importação/exportação de dados.
+
+## 🎯 Funcionalidades
+- ✅ Criar, listar, atualizar e deletar clientes (CRUD)
+- ✅ Conexão com banco de dados SQL Server
+- ✅ Exportação e importação de clientes em JSON
+- ✅ Manipulação de arquivos TXT
+- ✅ Interface via Console
+- ✅ Código limpo e estruturado em camadas
 
 ## Tecnologias
 - C# .NET 6

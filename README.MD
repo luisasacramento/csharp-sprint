@@ -51,6 +51,12 @@ CREATE TABLE Produtos (
     Estoque INT
 );
 ```
+### Ajuste a connection string em Data/Database.cs conforme sua máquina:
+
+```
+private static readonly string connectionString = 
+    "Server=localhost;Database=ProjetoDB;Trusted_Connection=True;";
+```
 
 ## Estrutura
 - Models/ -> Classes de dados

@@ -24,14 +24,9 @@ Este projeto é uma aplicação em **C# .NET Console** que permite gerenciar cli
 - SQL Server
 - Newtonsoft.Json
 
-## Script para usar no SQL Server com essa aplicação
-
----
-
 ## 🛠️ Configuração do Banco de Dados
 
-1. Abra o **SQL Server Management Studio (SSMS)** ou outro cliente SQL.
-2. Execute o script abaixo para criar o banco e as tabelas:
+Abra o SQL Server Management Studio (SSMS) ou outro cliente SQL e execute o script abaixo para criar o banco e as tabelas:
 
 ```sql
 -- Criar banco de dados

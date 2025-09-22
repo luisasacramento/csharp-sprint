@@ -60,7 +60,7 @@ CREATE TABLE Produtos (
 - UI/ -> Interface
 
 ## Arquitetura em Diagrama 
-mermaid
+```mermaid
 classDiagram
     class Cliente {
         +int Id

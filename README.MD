@@ -60,12 +60,20 @@ CREATE TABLE Produtos (
 - UI/ -> Interface
 
 ## Arquitetura em Diagrama 
+
 ```mermaid
 classDiagram
     class Cliente {
         +int Id
         +string Nome
         +string Email
+    }
+
+    class Produto {
+        +int Id
+        +string Nome
+        +decimal Preco
+        +int Estoque
     }
 
     class ClienteRepository {
@@ -75,11 +83,25 @@ classDiagram
         +Delete(int)
     }
 
+    class ProdutoRepository {
+        +Create(Produto)
+        +ReadAll() List<Produto>
+        +Update(Produto)
+        +Delete(int)
+    }
+
     class ClienteService {
         +AdicionarCliente(string, string)
         +GetAll() List<Cliente>
         +AtualizarCliente(int, string, string)
         +DeletarCliente(int)
+    }
+
+    class ProdutoService {
+        +AdicionarProduto(string, decimal, int)
+        +GetAll() List<Produto>
+        +AtualizarProduto(int, string, decimal, int)
+        +DeletarProduto(int)
     }
 
     class FileHandler {
@@ -94,7 +116,12 @@ classDiagram
     }
 
     ClienteRepository --> Cliente
+    ProdutoRepository --> Produto
     ClienteService --> ClienteRepository
+    ProdutoService --> ProdutoRepository
     ConsoleUI --> ClienteService
+    ConsoleUI --> ProdutoService
     FileHandler --> Cliente
+    FileHandler --> Produto
+
 

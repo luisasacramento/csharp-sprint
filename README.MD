@@ -20,7 +20,7 @@ Este projeto é uma aplicação em **C# .NET Console** que permite gerenciar cli
 - ✅ Código limpo e estruturado em camadas
 
 ## Tecnologias
-- C# .NET 6
+- C# .NET 
 - SQL Server
 - Newtonsoft.Json
 

@@ -49,7 +49,8 @@ CREATE TABLE Produtos (
     Nome NVARCHAR(100),
     Preco DECIMAL(10,2),
     Estoque INT
-);```
+);
+```
 
 ## Estrutura
 - Models/ -> Classes de dados

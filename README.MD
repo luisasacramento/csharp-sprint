@@ -24,6 +24,26 @@ Este projeto é uma aplicação em **C# .NET Console** que permite gerenciar cli
 - SQL Server
 - Newtonsoft.Json
 
+## Script para usar no SQL Server com essa aplicação
+CREATE DATABASE ProjetoDB;
+GO
+
+USE ProjetoDB;
+GO
+
+CREATE TABLE Clientes (
+    Id INT PRIMARY KEY IDENTITY,
+    Nome NVARCHAR(100),
+    Email NVARCHAR(100)
+);
+
+CREATE TABLE Produtos (
+    Id INT PRIMARY KEY IDENTITY,
+    Nome NVARCHAR(100),
+    Preco DECIMAL(10,2),
+    Estoque INT
+);
+
 ## Estrutura
 - Models/ -> Classes de dados
 - Data/ -> Conexão com banco

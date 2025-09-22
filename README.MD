@@ -63,8 +63,8 @@ CREATE TABLE Produtos (
 - Utils/ -> Manipulação de arquivos
 - UI/ -> Interface
 
-## Arquitetura em Diagrama
-```mermaid
+## Arquitetura em Diagrama 
+mermaid
 classDiagram
     class Cliente {
         +int Id
